@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+
+
+
+body {
+    background-color: #F8F6F0;
+    padding: 0px;
+    margin: 0px;
+
+    
+}
+.backgroundImage {
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    z-index: 1;
+}
+.backgroundImage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-image: url('./images/whiteRest.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* Adjust the opacity value */
+    z-index: -1; /* Ensure it is behind the content */
+}
+.above {
+    z-index: 2;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15rem;
+    background-color: black;
+    padding: 0 10rem;
+    z-index: 3;
+    opacity: 0.40;
+}
+.logo {
+    height: 12rem;
+    width: 15rem;
+
+
+}
+nav {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    margin-left: 20px;
+    margin-top: 5px;
+    
+}
+button {
+    background-color: #47474785; /* Ensure buttons have a solid background color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 4; /* Ensure buttons are above the header */
+    border-radius: 10px 34px 12px 19px;
+    -webkit-border-radius: 10px 34px 12px 19px;
+    -moz-border-radius: 10px 34px 12px 19px;
+    height: 2rem;
+    width: 12rem;
+    font-size: 1.8rem;
+    font-family: 'Homemade Apple';
+    color: rgb(250, 250, 250);
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    
+}
+button:hover {
+    background-color: rgba(148, 143, 143, 0.733);
+}
+
+#content {
+    width: 80vw;
+    height: 100%;
+    background-color: #4747476e;
+   
+    
+}
+.menuBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

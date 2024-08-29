@@ -1,0 +1,72 @@
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    margin: 60px 10px 10px 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    width: 28rem;
+    position: relative;
+    margin-top: 150px;
+}
+.menu-item .image {
+    height: 270px;
+    width: 270px;
+    position: absolute;
+    top: -125px; /* Move the image up by half its height */
+    left: 50%; /* Center the image horizontally */
+    transform: translateX(-50%); /* Adjust the image to stick out from the center */
+    
+    z-index: 1; /* Ensure the image is above other elements */
+    
+}
+.menu-item .background {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.menu-item .background .border-shadow {
+    border-bottom: 1px solid grey;
+    box-shadow: 0 4px 2px -2px grey;
+}
+.menu-item .background .rating-calories {
+    display: flex;
+    justify-content: space-between;
+}
+.menuContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+}
+.menuTitle {
+    font-size: 2rem;
+    font-family: Homemade Apple;
+    margin: 0;
+}
+.menuDescription {
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.titleAndDescriptionDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image {
+    
+    background-size: cover;
+    background-position: center;
+
+}
+.background {
+    margin-top: 150px;
+}
+.caloriesText, .ratingText {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}

@@ -1,0 +1,38 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+/* Indie Flower */
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Indie+Flower&display=swap');
+
+
+.h1Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+
+
+.h1Slogan {
+    font-size: 6rem;
+    font-family: Covered By Your Grace;
+    color: rgba(255, 253, 253, 0.918);
+}
+.foodimage {
+    background-image: url('./images/homeFood.png');
+    background-size: cover ;
+    height: 600px;
+    width: 600px;
+    transition: transform 0.5s ease;
+}
+.foodimage:hover {
+    transform: rotate(360deg);
+}
+.foodimageDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+
+}
